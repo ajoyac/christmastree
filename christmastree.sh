@@ -125,9 +125,11 @@ arg1=$1
 if [ $# -gt 0 ];
  then
     case "$arg1" in
-        loop)
-    	watch --color -n $SPEED ./christmastree.sh
+        --loop)
+        watch --color -n $SPEED ./christmastree.sh
     ;;
+        *)
+        printf "For infinite loop use '--loop', otherwise leave it blank\n"
     esac
  else
   xmastree

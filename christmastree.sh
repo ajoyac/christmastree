@@ -1,5 +1,6 @@
 #!/bin/bash
 #Christmass tree by rodrigo.pulido.gf@gmail.com
+SPEED=.2
 BLACK='\033[0;30m'
 GRAY='\033[1;30m'
 RED='\033[0;31m'
@@ -125,7 +126,7 @@ if [ $# -gt 0 ];
  then
     case "$arg1" in
         loop)
-    	watch --color -n .2 ./christmastree.sh
+    	watch --color -n $SPEED ./christmastree.sh
     ;;
     esac
  else
